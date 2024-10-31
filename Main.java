@@ -33,14 +33,13 @@ public class Main {
         }
 
         int jumlahSelfNumber = 0;
-        System.out.print( "SelfNumber dari 1 hingga" + batas + "= ");
         for( int i= 1; i<=batas; i++){
             if (!angkaDihasilkan.contains(i)) {
-                System.out.print(i + " ");
-                jumlahSelfNumber++;
+
+                jumlahSelfNumber += i;
             }
         }
-        System.out.println( " \n Jumlah selfNumber dari 1 sampai " +batas + "= " + jumlahSelfNumber);
+        System.out.println( "Jumlah selfNumber dari 1 sampai " +batas + "= " + jumlahSelfNumber);
     }
 
 }
